@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShowCase</title>
+
+</head>
+<body>
+<h1 align="center">Showcase of pictures</h1>
+<h4 align="center">This page contains pictures that are fetched from the database on real time and the information are
+    shown below.
+    You can post your comments below in the comments field.
+</h4>
+<div id="imageField" align="center"></div>
+<div id="controller" align="center">
+    <button id="prev" onclick="loadAll(2)">PREV</button>
+    <button id="next" onclick="loadAll(1)">NEXT</button>
+
+</div>
+Comments:
+<div id="comment"></div>
+<p>Write your comment</p><textarea id="commentText" cols="40" rows="3"> </textarea>
+<br/>
+<input type="submit" onclick="loadAll(3); return false;" value="submit"></input>
+
+</form>
+
+<script src="showcase.js">
+</script>
+</body>
+</html>
